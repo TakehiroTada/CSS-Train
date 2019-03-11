@@ -1,0 +1,268 @@
+<html>
+<head>
+<title>Hello world !</title>
+<style type="text/css">
+.train {
+  width: 2000px;
+  height: 500px;
+  background: white;
+  display: flex;
+  animation-duration: 5s;
+  animation-name: train-animation ;
+  }
+@keyframes train-animation {
+  from {
+    transform: translate(0,0);
+  }
+  to {
+    transform: translate(-2500px,0px);
+  }
+}
+.train-base1 {
+  width: 350px;
+  height: 300px;
+  position: relative;
+} 
+.train-base1-1 {
+  width: 300px;
+  height: 120px;
+  border: solid 8px black;
+  border-radius: 25px 25px 25px 25px / 25px 25px 25px 25px;
+  position: absolute;
+  margin: 10px;
+  top: 117px;
+} 
+.train-base1-1-top {
+  width: 43px;
+  height: 41px;
+  border: solid 8px black;
+  position: absolute;
+  margin: 10px;
+  top: -67px;
+  left: 15px;
+} 
+.train-base1-2 {
+  position: absolute;
+  top: 50px;
+  left: 139px;
+  width: 171px;
+  height: 127px;
+  border: solid 8px black;
+  background: white;
+}
+.train-base1-2-top {
+  width: 69px;
+  height: 20px;
+  border: solid 9px black;
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+  margin: 8px;
+  position: absolute;
+  left: 3px;
+  top: -95px;
+}
+.tire3 {
+  width: 50px;
+  height: 50px;
+  border: solid 8px black;
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+  position: absolute;
+  top: 226px;
+  left: 54px;
+  background: black;
+}
+.tire4 {
+  width: 50px;
+  height: 50px;
+  border: solid 8px black;
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+  position: absolute;
+  top: 226px;
+  left: 222px;
+  background: black;
+}
+.window2 {
+  width: 60px;
+  height: 45px;
+  border: solid 9px black;
+  border-radius: 25px 25px 0px 0px / 25px 25px 0px 0px;
+  margin: 8px;
+  position: absolute;
+  left: 11px;
+}
+.window2-top {
+  width: 202px;
+  height: 19px;
+  border: solid 9px black;
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+  margin: 8px;
+  position: absolute;
+  left: -32px;
+  top: -45px;
+}
+.train-base2 {
+  width: 250px;
+  height: 200px;
+  border: solid 8px black;
+  border-radius: 25px 25px 25px 25px / 25px 25px 25px 25px;
+  position: relative;
+  margin: 20px;
+  top: 25px;
+}
+.base-border {
+  width: 247px;
+  height: 10px;
+  position: absolute;
+  border-bottom-right-radius: 50% 25px;
+  border-bottom-left-radius: 50% 25px;
+  border: solid 6px black;
+  top: 13px;
+  left: -4px;
+  border-top-color: white;
+}
+.windows {
+  position: absolute;
+  top: 43px;
+  display: flex;
+  justify-content: center;
+}
+.window {
+  width: 50px;
+  height: 50px;
+  /* background: black; */
+  border: solid 8px black;
+  border-radius: 25px 25px 0px 0px / 25px 25px 0px 0px;
+  margin: 8px;
+}
+.tire {
+  width: 50px;
+  height: 50px;
+  border: solid 8px black;
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+  position: absolute;
+  top: 174px;
+  left: 26px;
+  background: black;
+}
+.tire2 {
+  width: 50px;
+  height: 50px;
+  border: solid 8px black;
+  position: absolute;
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+  top: 174px;
+  left: 148px;
+  background: black;
+}
+.tire-in {
+  width: 25px;
+  height: 25px;
+  border: solid 2px black;
+  position: absolute;
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+  top: 10px;
+  left: 10px;
+  background: white;
+}
+</style>
+</head>
+<body>
+  <div class="train">
+    <div class="train-base1">
+        <div class="train-base1-1">
+          <div class="train-base1-1-top"></div>
+          <div class="train-base1-2-top"></div>
+        </div>
+        <div class="train-base1-2">
+          <div class="window2"></div>
+          <div class="window2-top"></div>
+        </div>
+        <div class="tire3">
+            <div class="tire-in"></div>
+        </div>
+        <div class="tire4">
+            <div class="tire-in"></div>
+        </div>
+    </div>
+    <div class="train-base2">
+      <div class="base-border"></div>
+
+      <div class="windows">
+        <div class="window"></div>
+        <div class="window"></div> 
+        <div class="window"></div>
+      </div>
+
+      <div class="tire">
+        <div class="tire-in"></div>
+      </div>
+      <div class="tire2">
+          <div class="tire-in"></div>
+      </div>
+    </div>
+    <div class="train-base2">
+      <div class="base-border"></div>
+
+      <div class="windows">
+        <div class="window"></div>
+        <div class="window"></div> 
+        <div class="window"></div>
+      </div>
+
+      <div class="tire">
+          <div class="tire-in"></div>
+      </div>
+      <div class="tire2">
+          <div class="tire-in"></div>
+      </div>
+    </div>
+    <div class="train-base2">
+      <div class="base-border"></div>
+
+      <div class="windows">
+        <div class="window"></div>
+        <div class="window"></div> 
+        <div class="window"></div>
+      </div>
+
+      <div class="tire">
+          <div class="tire-in"></div>
+      </div>
+      <div class="tire2">
+          <div class="tire-in"></div>
+      </div>
+    </div>
+    <div class="train-base2">
+      <div class="base-border"></div>
+
+      <div class="windows">
+        <div class="window"></div>
+        <div class="window"></div> 
+        <div class="window"></div>
+      </div>
+
+      <div class="tire">
+          <div class="tire-in"></div>
+      </div>
+      <div class="tire2">
+          <div class="tire-in"></div>
+      </div>
+    </div>
+    <div class="train-base2">
+      <div class="base-border"></div>
+
+      <div class="windows">
+        <div class="window"></div>
+        <div class="window"></div> 
+        <div class="window"></div>
+      </div>
+
+      <div class="tire">
+          <div class="tire-in"></div>
+      </div>
+      <div class="tire2">
+          <div class="tire-in"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
